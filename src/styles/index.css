@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Arima+Madurai:300");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+:root {
+  --blue: #3668a9;
+  --gray: #2a2b2c;
+  --red: #a02c2d;
+  --green: #37a892;
+
+  --dark: black;
+  --light: #f6f6f6;
+
+  --dominant: var(--blue);
+  --accent: var(--green);
+  --error: var(--red);
+
+  --background-main: var(--light);
+  --background-alt: var(--gray);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}

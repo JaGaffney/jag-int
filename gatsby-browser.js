@@ -1,0 +1,7 @@
+import "./src/styles/index.css"
+import "./src/styles/layout.css"
+import "./src/styles/header.css"
+import "./src/styles/body.css"
+import "./src/styles/generics.css"
+import "./src/styles/responsive.css"
+import "./src/styles/premade/animated-hover.css"
