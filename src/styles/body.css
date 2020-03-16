@@ -70,3 +70,11 @@
   font-weight: 700;
   letter-spacing: 3px;
 }
+
+.contact-form__container {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
