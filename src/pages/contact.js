@@ -16,6 +16,7 @@ const ContactPage = () => (
         action="/"
         className="contact-form"
       >
+        <input type="hidden" name="form-name" value="contact" />
         <p>
           <label>
             Your Name: <input type="text" name="name" />
