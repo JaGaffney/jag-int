@@ -47,4 +47,5 @@
   height: 100px;
   width: 100px;
   background: var(--dominant);
+  border-radius: 1rem;
 }
