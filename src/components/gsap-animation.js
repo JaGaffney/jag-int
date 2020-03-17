@@ -3,19 +3,25 @@ import React, { useEffect, useState } from "react"
 import { gsap } from "gsap"
 
 const GSAP = props => {
-  // need a way to set the total based on how big the element is
-  const [boxTotal, setBoxTotal] = useState(15)
+  const [boxTotal, setBoxTotal] = useState(14)
 
   useEffect(() => {
-    gsap.from(".box", {
-      duration: 3,
-      scale: 0.5,
-      opacity: 0,
-      delay: 0.5,
-      stagger: 0.2,
-      ease: "elastic",
-      force3D: true,
-    })
+    const urlLoc = window.location.href.split("/")
+    const URLSplit = urlLoc[3]
+    console.log(URLSplit)
+
+    if (URLSplit === "") {
+      setBoxTotal(30)
+      gsap.from(".box", {
+        duration: 3,
+        scale: 0.5,
+        opacity: 0,
+        delay: 0.5,
+        stagger: 0.2,
+        ease: "elastic",
+        force3D: true,
+      })
+    }
   }, [])
 
   const range = (start, end) => {
