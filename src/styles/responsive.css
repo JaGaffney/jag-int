@@ -53,6 +53,10 @@
     height: 100%;
     flex-direction: column;
   }
+  .item3__wrapper {
+    width: 100%;
+  }
+
   .item2__image {
     width: 70%;
   }

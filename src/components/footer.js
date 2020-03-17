@@ -16,8 +16,17 @@ const Footer = () => {
           <a href="https://jongaffney.tech/">Linked In</a>
         </li>
       </ul>
+
       <div className="footer-copyright">
-        <span>© 2020 JAG Integrated Services</span>
+        <span>PO Box 193 | North Melbourne | VIC | 3051</span>
+      </div>
+      <div className="footer-copyright">
+        <span>
+          © 2020{" "}
+          <span style={{ color: "var(--dominant)" }}>
+            JAG Integrated Services
+          </span>
+        </span>
       </div>
     </div>
   )

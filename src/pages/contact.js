@@ -18,32 +18,37 @@ const ContactPage = () => (
       >
         <input type="hidden" name="form-name" value="contact" />
         <p>
-          <label>
-            Your Name: <input type="text" name="name" />
-          </label>
+          <input type="text" name="name" placeholder="Name*" required />
         </p>
         <p>
-          <label>
-            Your Email: <input type="email" name="email" />
-          </label>
+          <input type="email" name="email" placeholder="Email*" required />
         </p>
         <p>
-          <label>
-            Your Role:{" "}
-            <select name="role[]" multiple>
-              <option value="leader">Leader</option>
-              <option value="follower">Follower</option>
-            </select>
-          </label>
+          <input
+            type="text"
+            name="phone"
+            placeholder="Contact number*"
+            required
+          />
         </p>
         <p>
-          <label>
-            Message: <textarea name="message"></textarea>
-          </label>
+          <input type="text" name="subject" placeholder="Subject*" required />
         </p>
         <p>
-          <button type="submit">Send</button>
+          <textarea
+            name="message"
+            placeholder="Enquiry"
+            rows="10"
+            cols="50"
+          ></textarea>
         </p>
+
+        <button className="svg-wrapper form-submit" type="submit">
+          <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+            <rect className="shape" height="60" width="320" />
+          </svg>
+          <div className="text">Send</div>
+        </button>
       </form>
     </div>
   </Layout>

@@ -23,7 +23,11 @@ const Item1 = () => {
         <p>
           When you engage <span>JAG Integrated Services</span>, you benefit from
           our industry experience, operational efficiency and commitment to
-          exceptional site presentation standards.
+          exceptional site presentation standards.{" "}
+        </p>
+        <p>
+          If you want to know how we can faciliate your needs, please feel free
+          to contact us.{" "}
         </p>
 
         <Link className="item__button" to="/contact">

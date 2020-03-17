@@ -32,20 +32,14 @@ const Item3 = () => {
 
         <div className="item3__text">
           <h1>Cleaning and Washroom</h1>
-          <p>
-            When you engage <span>JAG Integrated Services</span>, you benefit
-            from our industry experience, operational efficiency and commitment
-            to exceptional site presentation standards.
-          </p>
-
-          <Link className="item__button" to="/services/cleaning">
-            <div className="svg-wrapper">
-              <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
-                <rect className="shape" height="60" width="320" />
-              </svg>
-              <div className="text">Explore</div>
-            </div>
-          </Link>
+          <ul>
+            <li>Provision and management of cleaning</li>
+            <li>Provision of consumable products</li>
+            <li>Waste and loading dock management</li>
+            <li>Periodical management and Carpark management</li>
+            <li>Builders Clean</li>
+            <li>24/7 cleaning services</li>
+          </ul>
         </div>
       </div>
 
@@ -56,22 +50,28 @@ const Item3 = () => {
 
         <div className="item3__text">
           <h1>Security Personnel and Systems</h1>
-          <p>
-            When you engage <span>JAG Integrated Services</span>, you benefit
-            from our industry experience, operational efficiency and commitment
-            to exceptional site presentation standards.
-          </p>
-
-          <Link className="item__button" to="service/secuirty">
-            <div className="svg-wrapper">
-              <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
-                <rect className="shape" height="60" width="320" />
-              </svg>
-              <div className="text">Explore</div>
-            </div>
-          </Link>
+          <ul>
+            <li>Patrolling, guarding and protecting property and personnel</li>
+            <li>Crowd Control</li>
+            <li>Control Room Operation</li>
+            <li>Cash Handling</li>
+            <li>
+              Issuing and control of keys, access control and security passes
+            </li>
+            <li style={{ listStyle: "none", color: "var(--background-main)" }}>
+              .
+            </li>
+          </ul>
         </div>
       </div>
+      <Link className="item__button" to="/services">
+        <div className="svg-wrapper">
+          <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+            <rect className="shape" height="60" width="320" />
+          </svg>
+          <div className="text">Explore</div>
+        </div>
+      </Link>
     </div>
   )
 }

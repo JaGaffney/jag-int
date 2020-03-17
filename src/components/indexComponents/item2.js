@@ -24,9 +24,7 @@ const Item2 = () => {
       <div className="item1__text">
         <h1>Why Choose Us?</h1>
         <p>
-          When you engage <span>JAG Integrated Services</span>, you benefit from
-          our industry experience, operational efficiency and commitment to
-          exceptional site presentation standards.
+          <span>JAG Integrated Services</span>, strives for ....
         </p>
 
         <Link className="item__button" to="/about">
