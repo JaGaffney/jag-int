@@ -1,10 +1,11 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const ContactPage = () => (
+  // need data validation
+
   <Layout>
     <SEO title="Contact" />
 
@@ -13,7 +14,7 @@ const ContactPage = () => (
         name="contact"
         method="POST"
         data-netlify="true"
-        action="/"
+        action="/contact/thank-you"
         className="contact-form"
       >
         <input type="hidden" name="form-name" value="contact" />

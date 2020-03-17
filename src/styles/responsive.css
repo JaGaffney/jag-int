@@ -1,4 +1,8 @@
 @media only screen and (max-width: 1000px) {
+  .box-animation-container {
+    display: none;
+  }
+
   .layout-container {
     grid-template-columns: 1% 98% 1%;
   }

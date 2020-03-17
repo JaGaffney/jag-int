@@ -41,3 +41,10 @@
   border: none;
   background: none;
 }
+
+.box {
+  margin: 0.2rem;
+  height: 100px;
+  width: 100px;
+  background: var(--dominant);
+}

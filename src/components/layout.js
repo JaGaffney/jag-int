@@ -5,6 +5,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Footer from "./footer"
 
+import GSAP from "../components/gsap-animation"
+
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -26,6 +28,7 @@ const Layout = ({ children }) => {
           <div className="bannerBadge"></div>
         </div>
 
+        <GSAP />
         <main>{children}</main>
         <footer>
           <Footer />
