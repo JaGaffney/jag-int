@@ -8,7 +8,7 @@ import Item3 from "../components/indexComponents/item3"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="JAG Integrated Services - Home" />
 
     <Item1 />
     <div className="item-break"></div>

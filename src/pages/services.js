@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 const ServicesPage = () => (
   <Layout>
-    <SEO title="services" />
+    <SEO title="Services" />
     <h1>ServicesPage</h1>
     <p>
       <i>details coming soon</i>
