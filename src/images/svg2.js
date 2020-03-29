@@ -305,7 +305,7 @@ const SVG2 = () => {
       <rect x="80" y="760" width="30" height="30" rx="15" fill="#CBD5E0" />
       <rect x="1360" y="761" width="30" height="30" rx="15" fill="#CBD5E0" />
       <rect x="400" y="760" width="30" height="30" rx="15" fill="#CBD5E0" />
-      <rect x="1680" y="761" width="30" height="30" rx="15" fill="#FEB2B2" />
+      <rect x="1680" y="761" width="30" height="30" rx="15" fill="#3668A9" />
       <rect x="1040" y="761" width="30" height="30" rx="15" fill="#CBD5E0" />
       <rect x="880" y="759" width="30" height="30" rx="15" fill="#CBD5E0" />
       <rect x="240" y="759" width="30" height="30" rx="15" fill="#CBD5E0" />
@@ -358,7 +358,7 @@ const SVG2 = () => {
       <rect x="640" y="440" width="30" height="30" rx="15" fill="#CBD5E0" />
       <rect x="1280" y="441" width="30" height="30" rx="15" fill="#CBD5E0" />
       <rect x="1320" y="1241" width="30" height="30" rx="15" fill="#CBD5E0" />
-      <rect x="1320" y="1281" width="30" height="30" rx="15" fill="#FEB2B2" />
+      <rect x="1320" y="1281" width="30" height="30" rx="15" fill="#3668A9" />
       <rect x="1480" y="1240" width="30" height="30" rx="15" fill="#CBD5E0" />
       <rect x="1160" y="1240" width="30" height="30" rx="15" fill="#CBD5E0" />
       <rect x="1400" y="1242" width="30" height="30" rx="15" fill="#CBD5E0" />
@@ -465,7 +465,7 @@ const SVG2 = () => {
       <rect x="760" y="81" width="30" height="30" rx="15" fill="#CBD5E0" />
       <rect x="920" y="80" width="30" height="30" rx="15" fill="#CBD5E0" />
       <rect x="1240" y="81" width="30" height="30" rx="15" fill="#CBD5E0" />
-      <rect x="720" y="80" width="30" height="30" rx="15" fill="#FEB2B2" />
+      <rect x="720" y="80" width="30" height="30" rx="15" fill="#3668A9" />
       <rect x="880" y="79" width="30" height="30" rx="15" fill="#CBD5E0" />
       <rect x="1200" y="80" width="30" height="30" rx="15" fill="#CBD5E0" />
       <rect x="800" y="81" width="30" height="30" rx="15" fill="#CBD5E0" />
@@ -646,7 +646,7 @@ const SVG2 = () => {
       <rect x="960" y="1040" width="30" height="30" rx="15" fill="#CBD5E0" />
       <rect x="960" y="1080" width="30" height="30" rx="15" fill="#CBD5E0" />
       <rect x="320" y="1040" width="30" height="30" rx="15" fill="#CBD5E0" />
-      <rect x="1600" y="1041" width="30" height="30" rx="15" fill="#FEB2B2" />
+      <rect x="1600" y="1041" width="30" height="30" rx="15" fill="#3668A9" />
       <rect x="1280" y="1041" width="30" height="30" rx="15" fill="#CBD5E0" />
       <rect x="680" y="560" width="30" height="30" rx="15" fill="#CBD5E0" />
       <rect x="40" y="560" width="30" height="30" rx="15" fill="#CBD5E0" />
@@ -715,7 +715,7 @@ const SVG2 = () => {
       <rect x="1160" y="960" width="30" height="30" rx="15" fill="#CBD5E0" />
       <rect x="760" y="961" width="30" height="30" rx="15" fill="#CBD5E0" />
       <rect x="120" y="961" width="30" height="30" rx="15" fill="#CBD5E0" />
-      <rect x="80" y="961" width="30" height="30" rx="15" fill="#FEB2B2" />
+      <rect x="80" y="961" width="30" height="30" rx="15" fill="#3668A9" />
       <rect x="1400" y="962" width="30" height="30" rx="15" fill="#CBD5E0" />
       <rect x="440" y="961" width="30" height="30" rx="15" fill="#CBD5E0" />
       <rect x="1080" y="962" width="30" height="30" rx="15" fill="#CBD5E0" />
@@ -829,7 +829,7 @@ const SVG2 = () => {
       <rect x="1200" y="1280" width="30" height="30" rx="15" fill="#CBD5E0" />
       <rect x="1440" y="1282" width="30" height="30" rx="15" fill="#CBD5E0" />
       <rect x="1280" y="1281" width="30" height="30" rx="15" fill="#CBD5E0" />
-      <rect x="1400" y="1562" width="30" height="30" rx="15" fill="#FEB2B2" />
+      <rect x="1400" y="1562" width="30" height="30" rx="15" fill="#3668A9" />
       <rect x="1360" y="1561" width="30" height="30" rx="15" fill="#CBD5E0" />
       <rect x="680" y="320" width="30" height="30" rx="15" fill="#CBD5E0" />
       <rect x="1320" y="321" width="30" height="30" rx="15" fill="#CBD5E0" />
@@ -863,11 +863,11 @@ const SVG2 = () => {
       <rect x="1160" y="1120" width="30" height="30" rx="15" fill="#CBD5E0" />
       <rect x="120" y="1121" width="30" height="30" rx="15" fill="#CBD5E0" />
       <rect x="1400" y="1122" width="30" height="30" rx="15" fill="#CBD5E0" />
-      <rect x="1080" y="1122" width="30" height="30" rx="15" fill="#FEB2B2" />
+      <rect x="1080" y="1122" width="30" height="30" rx="15" fill="#3668A9" />
       <rect x="1560" y="1121" width="30" height="30" rx="15" fill="#CBD5E0" />
       <rect x="1240" y="1121" width="30" height="30" rx="15" fill="#CBD5E0" />
       <rect x="1360" y="1121" width="30" height="30" rx="15" fill="#CBD5E0" />
-      <rect x="1520" y="1120" width="30" height="30" rx="15" fill="#FEB2B2" />
+      <rect x="1520" y="1120" width="30" height="30" rx="15" fill="#3668A9" />
       <rect x="1200" y="1120" width="30" height="30" rx="15" fill="#CBD5E0" />
       <rect x="160" y="1121" width="30" height="30" rx="15" fill="#CBD5E0" />
       <rect x="1440" y="1122" width="30" height="30" rx="15" fill="#CBD5E0" />
