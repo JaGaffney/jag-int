@@ -2,11 +2,10 @@
   margin-left: 1rem;
   width: 100%;
   height: 100%;
-  opacity: 0.03;
 }
 .bannerBadge {
   position: relative;
-  background: var(--dominant);
+  background: var(--gray200);
   height: 700px;
   width: 700px;
   border-radius: 350px;
@@ -48,4 +47,9 @@
   width: 100px;
   background: var(--dominant);
   border-radius: 1rem;
+}
+
+.svg-container svg {
+  height: 30rem;
+  width: 30rem;
 }

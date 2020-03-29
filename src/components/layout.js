@@ -24,9 +24,9 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div className="layout-container">
-        <div className="bannerBadge-container">
+        {/* <div className="bannerBadge-container">
           <div className="bannerBadge"></div>
-        </div>
+        </div> */}
 
         <GSAP />
         <main>{children}</main>

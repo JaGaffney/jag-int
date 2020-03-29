@@ -13,6 +13,10 @@ header {
   background: var(--background-main);
   color: var(--accent);
   z-index: 1;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 main {
   margin: 10rem 0;
@@ -24,6 +28,9 @@ main {
   background: var(--background-main);
   display: flex;
   flex-direction: column;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 100;
 }
 footer {
   border-top: solid 1rem var(--dominant);

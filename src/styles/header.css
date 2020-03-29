@@ -24,10 +24,9 @@
 }
 .nav-links a {
   cursor: pointer;
-  font-family: "Roboto", sans-serif;
-  font-size: 0.9rem;
-  font-weight: 400;
-  letter-spacing: 4px;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 2px;
   text-decoration: none;
   color: var(--dominant);
 }

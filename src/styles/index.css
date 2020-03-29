@@ -10,12 +10,22 @@
   --dark: black;
   --light: #f6f6f6;
 
+  --gray100: #f7fafc;
+  --gray200: #edf2f7;
+  --gray300: #e2e8f0;
+  --gray400: #cbd5e0;
+  --gray500: #a0aec0;
+  --gray600: #718096;
+  --gray700: #4a5568;
+  --gray800: #2d3748;
+  --gray900: #1a202c;
+
   --dominant: var(--blue);
   --accent: var(--green);
   --error: var(--red);
 
-  --background-main: var(--light);
-  --background-alt: var(--gray);
+  --background-main: var(--gray100);
+  --background-alt: var(--gray900);
 }
 
 body {

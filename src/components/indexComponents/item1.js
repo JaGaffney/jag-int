@@ -1,7 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+
 import { Link } from "gatsby"
+import SVG2 from "../../images/svg2"
 
 const Item1 = () => {
   const data = useStaticQuery(graphql`
@@ -41,7 +42,9 @@ const Item1 = () => {
       </div>
 
       <div className="item1__image">
-        <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+        <div className="svg-container">
+          <SVG2 />
+        </div>
       </div>
     </div>
   )
