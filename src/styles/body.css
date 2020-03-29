@@ -12,7 +12,7 @@
 }
 .item1__text {
   height: 60%;
-  width: 50%;
+  width: 70%;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
@@ -64,6 +64,9 @@
   align-items: flex-start;
   flex-direction: column;
 }
+.item3__image-override {
+  border-radius: 10px;
+}
 
 .item3__text h1 {
   width: 100%;
@@ -80,8 +83,21 @@
   align-items: center;
   width: 100%;
 }
+.contact-form {
+  width: 60%;
+}
 
 .contact-form__container form p input,
-.contact-form__container form button {
+.contact-form__container form p textarea {
   width: 100%;
+  background: var(--gray200);
+  color: var(--gray800);
+  border: solid 2px var(--gray300);
+  box-shadow: 0 0 4px var(--gray400);
+  border-radius: 6px;
+  padding: 0.8rem 2rem 0.8rem 2rem;
+}
+
+.contact-form__container form p {
+  margin: 1.5rem;
 }

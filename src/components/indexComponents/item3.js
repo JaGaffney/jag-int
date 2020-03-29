@@ -27,7 +27,10 @@ const Item3 = () => {
     <div className="item3__container">
       <div className="item3__wrapper">
         <div className="item3__image">
-          <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+          <Img
+            fluid={data.placeholderImage.childImageSharp.fluid}
+            className="item3__image-override"
+          />
         </div>
 
         <div className="item3__text">
@@ -45,7 +48,10 @@ const Item3 = () => {
 
       <div className="item3__wrapper">
         <div className="item3__image">
-          <Img fluid={data.placeholderImage2.childImageSharp.fluid} />
+          <Img
+            fluid={data.placeholderImage2.childImageSharp.fluid}
+            className="item3__image-override"
+          />
         </div>
 
         <div className="item3__text">

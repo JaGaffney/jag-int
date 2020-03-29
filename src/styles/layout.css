@@ -13,9 +13,9 @@ header {
   background: var(--background-main);
   color: var(--accent);
   z-index: 1;
-  font-family: "Work Sans", sans-serif;
+  font-family: museo-sans, sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
 }
 main {
@@ -36,12 +36,13 @@ footer {
   border-top: solid 1rem var(--dominant);
   padding: 1rem;
   width: 100%;
-  height: 8rem;
+  height: 10rem;
   grid-column: 1 / 4;
   display: flex;
   justify-content: center;
   align-items: center;
   background: var(--background-alt);
+  color: var(--gray500);
 }
 
 .footer-container {
@@ -57,14 +58,13 @@ footer {
   align-items: center;
 }
 .footer-container ul li a {
-  color: var(--light);
+  color: var(--gray400);
 }
 .footer-container a:hover {
   color: var(--blue);
 }
 .footer-copyright {
   width: 100%;
-  color: var(--light);
   display: flex;
   justify-content: center;
   align-items: center;

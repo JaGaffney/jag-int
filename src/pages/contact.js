@@ -43,13 +43,14 @@ const ContactPage = () => (
             cols="50"
           ></textarea>
         </p>
-
-        <button className="svg-wrapper form-submit" type="submit">
-          <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
-            <rect className="shape" height="60" width="320" />
-          </svg>
-          <div className="text">Send</div>
-        </button>
+        <p style={{ display: "flex" }}>
+          <button className="svg-wrapper form-submit" type="submit">
+            <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+              <rect className="shape" height="60" width="320" />
+            </svg>
+            <div className="text">Send</div>
+          </button>
+        </p>
       </form>
     </div>
   </Layout>
