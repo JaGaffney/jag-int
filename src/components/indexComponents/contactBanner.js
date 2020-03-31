@@ -5,7 +5,7 @@ const ContactBanner = () => {
     <div className="contact-banner-container">
       <span>If your in need of our services</span>
       <form>
-        <input placeholder="john-smith@email.com"></input>
+        <input placeholder="john-smith@email.com.au"></input>
         <button>Get in touch</button>
       </form>
     </div>
