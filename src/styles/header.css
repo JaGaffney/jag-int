@@ -3,20 +3,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 2rem 1rem 0;
 }
 
 .header-title {
-  margin-left: 10rem;
+  margin-left: 7%;
   height: 100%;
-  width: 15rem;
+  width: 13rem;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
+  justify-content: center;
   list-style-type: none;
   flex-wrap: wrap;
+  margin: 0;
 }
 .nav-links li {
   margin: 0.2rem;
@@ -27,8 +29,19 @@
   font-size: 1rem;
   letter-spacing: 2px;
   text-decoration: none;
-  color: var(--dominant);
+  color: var(--gray500);
 }
 .nav-links a:hover {
+  color: var(--accent);
+}
+
+.header-login {
+  border: solid 2px var(--gray500);
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+.header-login:hover {
+  border-color: var(--accent);
+  cursor: pointer;
   color: var(--accent);
 }

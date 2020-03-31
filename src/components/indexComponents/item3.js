@@ -32,9 +32,10 @@ const Item3 = () => {
             className="item3__image-override"
           />
         </div>
-
-        <div className="item3__text">
+        <div className="item3__text-title">
           <h1>Cleaning and Washroom</h1>
+        </div>
+        <div className="item3__text">
           <ul>
             <li>Provision and management of cleaning</li>
             <li>Provision of consumable products</li>
@@ -53,9 +54,10 @@ const Item3 = () => {
             className="item3__image-override"
           />
         </div>
-
-        <div className="item3__text">
+        <div className="item3__text-title">
           <h1>Security Personnel and Systems</h1>
+        </div>
+        <div className="item3__text">
           <ul>
             <li>Patrolling, guarding and protecting property and personnel</li>
             <li>Crowd Control</li>
@@ -70,14 +72,16 @@ const Item3 = () => {
           </ul>
         </div>
       </div>
-      <Link className="item__button" to="/services">
-        <div className="svg-wrapper">
-          <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
-            <rect className="shape" height="60" width="320" />
-          </svg>
-          <div className="text">Explore</div>
-        </div>
-      </Link>
+      <div className="item3__wrapper-button">
+        <Link className="item__button" to="/services">
+          <div className="svg-wrapper">
+            <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+              <rect className="shape" height="60" width="320" />
+            </svg>
+            <div className="text">Explore</div>
+          </div>
+        </Link>
+      </div>
     </div>
   )
 }

@@ -27,6 +27,13 @@
   top: -48px;
 }
 
+.shape-light {
+  stroke: var(--gray500);
+}
+.text-light {
+  color: var(--gray500);
+}
+
 @keyframes draw {
   0% {
     stroke-dasharray: 140 540;

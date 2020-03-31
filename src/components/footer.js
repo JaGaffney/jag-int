@@ -7,7 +7,12 @@ const Footer = () => {
     <div className="footer-container">
       <ul>
         <li>
-          <a href="https://jagintegrated.integralcs.com/login">Login</a>
+          <a
+            href="https://jagintegrated.integralcs.com/login"
+            className="header-login"
+          >
+            Login
+          </a>
         </li>
         <li>
           <a href="https://www.facebook.com/jagintegrated">Facebook</a>

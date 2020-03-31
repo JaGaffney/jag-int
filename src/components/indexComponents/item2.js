@@ -1,30 +1,18 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 
 import { Link } from "gatsby"
 import SVG1 from "../../images/svg1"
 
 const Item2 = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "office-clean.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
   return (
-    <div className="item1__container">
+    <div className="item2__container">
       <div className="item2__image">
         <div className="svg-container">
           <SVG1 />
         </div>
       </div>
 
-      <div className="item1__text">
+      <div className="item2__text">
         <h1>Why Choose Us?</h1>
         <p>
           <span>JAG Integrated Services</span>, strives for ....

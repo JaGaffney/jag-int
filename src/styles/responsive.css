@@ -31,9 +31,14 @@
   }
 
   .header-title {
-    margin-left: 4rem;
+    width: 10rem;
   }
   .item1__container {
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+  .item2__container {
     height: 100%;
     flex-direction: column;
     text-align: center;
@@ -46,11 +51,30 @@
   .item1__text h1 {
     width: 100%;
   }
+
+  .svg-container svg {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  .item3__wrapper {
+    width: 90%;
+  }
+
+  .contact-banner-container {
+    width: 80%;
+    min-width: 20rem;
+  }
 }
 
 @media only screen and (max-width: 750px) {
   .header-title {
     margin-left: 1rem;
+  }
+
+  .header-login {
+    border: none;
+    padding: 0;
   }
 
   .item3__container {

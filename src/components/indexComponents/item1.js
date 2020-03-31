@@ -1,22 +1,9 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 
 import { Link } from "gatsby"
 import SVG2 from "../../images/svg2"
 
 const Item1 = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "office.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-
   return (
     <div className="item1__container">
       <div className="item1__text">
@@ -34,9 +21,9 @@ const Item1 = () => {
         <Link className="item__button" to="/contact">
           <div className="svg-wrapper">
             <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
-              <rect className="shape" height="60" width="320" />
+              <rect className="shape shape-light" height="60" width="320" />
             </svg>
-            <div className="text">Get in Touch</div>
+            <div className="text text-light">Get in Touch</div>
           </div>
         </Link>
       </div>

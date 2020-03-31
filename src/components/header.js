@@ -6,7 +6,7 @@ import Img from "gatsby-image"
 const Header = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "logo.png" }) {
+      placeholderImage: file(relativePath: { eq: "jag-int-logo.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -38,7 +38,12 @@ const Header = () => {
           <Link to="/contact">Contact</Link>
         </li>
         <li>
-          <a href="https://jagintegrated.integralcs.com/login">Login</a>
+          <a
+            href="https://jagintegrated.integralcs.com/login"
+            className="header-login"
+          >
+            Login
+          </a>
         </li>
       </ul>
     </header>
