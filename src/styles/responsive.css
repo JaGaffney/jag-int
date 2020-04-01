@@ -100,4 +100,10 @@
   .item-break {
     margin: 3rem 0;
   }
+
+  .item3__text ul {
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+  }
 }

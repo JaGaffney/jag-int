@@ -28,7 +28,7 @@ const Footer = () => {
       <div className="footer-copyright">
         <span>
           © 2020{" "}
-          <span style={{ color: "var(--dominant)" }}>
+          <span style={{ color: "var(--dominant-light)" }}>
             JAG Integrated Services
           </span>
         </span>

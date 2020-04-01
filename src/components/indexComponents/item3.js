@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
+import { TiTick } from "react-icons/ti"
 
 const Item3 = () => {
   const data = useStaticQuery(graphql`
@@ -23,6 +24,14 @@ const Item3 = () => {
     }
   `)
 
+  const TickIcon = () => {
+    return (
+      <div className="tick-icon-container">
+        <TiTick className="tick-icon-element" />
+      </div>
+    )
+  }
+
   return (
     <div className="item3__container">
       <div className="item3__wrapper">
@@ -37,12 +46,24 @@ const Item3 = () => {
         </div>
         <div className="item3__text">
           <ul>
-            <li>Provision and management of cleaning</li>
-            <li>Provision of consumable products</li>
-            <li>Waste and loading dock management</li>
-            <li>Periodical management and Carpark management</li>
-            <li>Builders Clean</li>
-            <li>24/7 cleaning services</li>
+            <li>
+              <TickIcon /> Provision and management of cleaning services
+            </li>
+            <li>
+              <TickIcon /> Supplying of consumable products
+            </li>
+            <li>
+              <TickIcon /> Waste and loading dock management
+            </li>
+            <li>
+              <TickIcon /> Periodical management and Carpark management
+            </li>
+            <li>
+              <TickIcon /> Builders Clean
+            </li>
+            <li>
+              <TickIcon /> 24/7 cleaning services
+            </li>
           </ul>
         </div>
       </div>
@@ -59,15 +80,22 @@ const Item3 = () => {
         </div>
         <div className="item3__text">
           <ul>
-            <li>Patrolling, guarding and protecting property and personnel</li>
-            <li>Crowd Control</li>
-            <li>Control Room Operation</li>
-            <li>Cash Handling</li>
             <li>
-              Issuing and control of keys, access control and security passes
+              <TickIcon /> Patrolling, guarding and protection of property and
+              personnel
             </li>
-            <li style={{ listStyle: "none", color: "var(--background-main)" }}>
-              .
+            <li>
+              <TickIcon /> Crowd Control
+            </li>
+            <li>
+              <TickIcon /> Control Room Operation
+            </li>
+            <li>
+              <TickIcon /> Cash Handling
+            </li>
+            <li>
+              <TickIcon />
+              Issuing and control of keys, access control and security passes
             </li>
           </ul>
         </div>

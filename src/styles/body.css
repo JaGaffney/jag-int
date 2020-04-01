@@ -28,7 +28,7 @@
   letter-spacing: 3px;
 }
 .item1__text span {
-  color: var(--dominant);
+  color: var(--dominant-light);
 }
 
 .item2__container {
@@ -89,6 +89,12 @@
   columns: 2;
   -webkit-columns: 2;
   -moz-columns: 2;
+  list-style-type: none;
+}
+.item3__text ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 .item3__image-override {
   border-radius: 50%;
