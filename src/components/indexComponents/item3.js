@@ -42,7 +42,7 @@ const Item3 = () => {
           />
         </div>
         <div className="item3__text-title">
-          <h1>Cleaning and Washroom</h1>
+          <h1>Cleaning and washroom</h1>
         </div>
         <div className="item3__text">
           <ul>
@@ -76,7 +76,7 @@ const Item3 = () => {
           />
         </div>
         <div className="item3__text-title">
-          <h1>Security Personnel and Systems</h1>
+          <h1>Security personnel and systems</h1>
         </div>
         <div className="item3__text">
           <ul>
