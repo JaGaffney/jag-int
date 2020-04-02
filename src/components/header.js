@@ -11,9 +11,7 @@ const Header = () => {
   })
 
   useEffect(() => {
-    let url = window.location.href.split("/")
-
-    switch (url[3]) {
+    switch (window.location.href.split("/")[3]) {
       case "about":
         setActivePage(state => ({ ...state, about: true }))
         break
