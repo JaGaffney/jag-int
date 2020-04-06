@@ -20,7 +20,12 @@ const Item2 = () => {
 
         <Link className="item__button" to="/about">
           <div className="svg-wrapper">
-            <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              height="60"
+              width="320"
+              xmlns="http://www.w3.org/2000/svg"
+              alt="business-meeting"
+            >
               <rect className="shape" height="60" width="320" />
             </svg>
             <div className="text">Explore</div>

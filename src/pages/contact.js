@@ -1,56 +1,87 @@
-import React from "react"
+import React, { useState } from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const ContactPage = () => (
+const ContactPage = () => {
+  const urlParams = new URLSearchParams(window.location.search)
+  const emailParamDefault = urlParams.get("email")
+
+  let emailDefault = emailParamDefault
+  if (emailParamDefault === null) {
+    emailDefault = ""
+  }
+
+  const [contactEmail, setContactEmail] = useState(emailDefault)
+
   // need data validation
+  return (
+    <Layout>
+      <SEO title="Contact" />
+      <div className="generic-container">
+        <div className="contact-form__container">
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            action="/contact/thank-you"
+            className="contact-form"
+          >
+            <input type="hidden" name="form-name" value="contact" />
 
-  <Layout>
-    <SEO title="Contact" />
-    <div className="generic-container">
-      <div className="contact-form__container">
-        <form
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          action="/contact/thank-you"
-          className="contact-form"
-        >
-          <input type="hidden" name="form-name" value="contact" />
+            <div className="contact-form__information">
+              <label htmlFor="lname">Name or company name *</label>
+              <input id="lname" type="text" name="name" required />
 
-          <input type="text" name="name" placeholder="Name*" required />
+              <div className="contact-form__information-inner">
+                <div>
+                  <label htmlFor="lemail">Email *</label>
+                  <input
+                    id="lemail"
+                    type="email"
+                    name="email"
+                    required
+                    onChange={e => setContactEmail(e.target.value)}
+                    value={contactEmail}
+                  />
+                </div>
 
-          <input type="email" name="email" placeholder="Email*" required />
+                <div>
+                  <label htmlFor="lnumber">Contact number *</label>
+                  <input id="lphone" type="text" name="phone" required />
+                </div>
+              </div>
+            </div>
 
-          <input
-            type="text"
-            name="phone"
-            placeholder="Contact number*"
-            required
-          />
+            <hr className="contact-form__seperator" />
 
-          <input type="text" name="subject" placeholder="Subject*" required />
+            <div className="contact-form__message">
+              <label htmlFor="lsubject">Subject *</label>
+              <input id="lsubject" type="text" name="subject" required />
 
-          <textarea
-            name="message"
-            placeholder="Enquiry"
-            rows="10"
-            cols="50"
-          ></textarea>
+              <label htmlFor="lmessage">Message *</label>
+              <textarea
+                id="lmessage"
+                name="message"
+                placeholder="Please enter your enquiry and we will get in touch."
+                rows="6"
+                cols="50"
+              ></textarea>
+            </div>
 
-          <p style={{ display: "flex" }}>
-            <button className="svg-wrapper form-submit" type="submit">
-              <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
-                <rect className="shape" height="60" width="320" />
-              </svg>
-              <div className="text">Send</div>
-            </button>
-          </p>
-        </form>
+            <p style={{ display: "flex" }}>
+              <button className="svg-wrapper form-submit" type="submit">
+                <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+                  <rect className="shape" height="60" width="320" />
+                </svg>
+                <div className="text">Send</div>
+              </button>
+            </p>
+          </form>
+        </div>
       </div>
-    </div>
-  </Layout>
-)
+    </Layout>
+  )
+}
 
 export default ContactPage

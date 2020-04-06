@@ -39,6 +39,7 @@ const Item3 = () => {
           <Img
             fluid={data.placeholderImage.childImageSharp.fluid}
             className="item3__image-override"
+            alt="person-cleaning-office"
           />
         </div>
         <div className="item3__text-title">
@@ -73,6 +74,7 @@ const Item3 = () => {
           <Img
             fluid={data.placeholderImage2.childImageSharp.fluid}
             className="item3__image-override"
+            alt="security-camera"
           />
         </div>
         <div className="item3__text-title">

@@ -20,7 +20,12 @@ const Item1 = () => {
 
         <Link className="item__button" to="/contact">
           <div className="svg-wrapper">
-            <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              height="60"
+              width="320"
+              xmlns="http://www.w3.org/2000/svg"
+              alt="australia-map"
+            >
               <rect className="shape shape-light" height="60" width="320" />
             </svg>
             <div className="text text-light">Get in Touch</div>

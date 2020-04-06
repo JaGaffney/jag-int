@@ -33,6 +33,7 @@ main {
   font-weight: 500;
 }
 .generic-container {
+  min-height: 45rem;
   width: 100%;
   height: 100%;
   display: flex;

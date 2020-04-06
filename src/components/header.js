@@ -1,7 +1,10 @@
-import { Link } from "gatsby"
 import React, { useState, useEffect } from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { Link } from "gatsby"
+
+// import { useStaticQuery, graphql } from "gatsby"
+// import Img from "gatsby-image"
+
+import Title from "../images/jag-int-logo.svg"
 
 const Header = () => {
   const [activePage, setActivePage] = useState({
@@ -11,7 +14,13 @@ const Header = () => {
   })
 
   useEffect(() => {
-    switch (window.location.href.split("/")[3]) {
+    let windowLoc = window.location.href.split("/")[3]
+
+    if (windowLoc.includes("?")) {
+      windowLoc = windowLoc.split("?")[0]
+    }
+
+    switch (windowLoc) {
       case "about":
         setActivePage(state => ({ ...state, about: true }))
         break
@@ -25,17 +34,17 @@ const Header = () => {
     }
   }, [])
 
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "jag-int-logo.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     placeholderImage: file(relativePath: { eq: "jag-int-logo.png" }) {
+  //       childImageSharp {
+  //         fluid(maxWidth: 300) {
+  //           ...GatsbyImageSharpFluid
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
 
   return (
     <header className="header-container">
@@ -46,7 +55,8 @@ const Header = () => {
             textDecoration: `none`,
           }}
         >
-          <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+          {/* <Img fluid={data.placeholderImage.childImageSharp.fluid} /> */}
+          <img src={Title} alt="logo" />
         </Link>
       </div>
       <ul className="nav-links">

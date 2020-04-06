@@ -105,6 +105,7 @@
     columns: 1;
     -webkit-columns: 1;
     -moz-columns: 1;
+    padding: 0 0.5rem;
   }
 }
 
