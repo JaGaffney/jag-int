@@ -3,9 +3,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem 1rem 0;
+  padding: 0.2rem 2rem 1rem 0;
 }
-
 .header-title {
   margin-left: 7%;
   height: 100%;
@@ -19,36 +18,35 @@
   list-style-type: none;
   flex-wrap: wrap;
   margin: 0;
-}
-.nav-links li {
-  margin: 0.2rem;
-  margin: 0 1.5rem 0 0;
-}
-.nav-links a {
-  cursor: pointer;
-  font-size: 1rem;
-  letter-spacing: 2px;
-  text-decoration: none;
-  color: var(--gray500);
-  border-bottom: solid 3px transparent;
-  padding-bottom: 1rem;
-}
-.nav-links a:hover {
-  color: var(--accent);
-  border-bottom: solid 3px var(--accent);
+  li {
+    margin: 0.2rem;
+    margin: 0 1.5rem 0 0;
+  }
+  a {
+    cursor: pointer;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: var(--gray500);
+    border-bottom: solid 3px transparent;
+    padding-bottom: 1rem;
+    &:hover {
+      color: var(--accent);
+      border-bottom: solid 3px var(--accent);
+    }
+  }
 }
 .active-header {
   color: var(--dominant-light) !important;
   border-bottom: solid 3px var(--dominant-light) !important;
 }
-
 .header-login {
   border: solid 2px var(--gray500) !important;
   border-radius: 5px;
   padding: 0.5rem !important;
-}
-.header-login:hover {
-  border-color: var(--accent) !important;
-  cursor: pointer;
-  color: var(--accent);
+  &:hover {
+    border-color: var(--accent) !important;
+    cursor: pointer;
+    color: var(--accent);
+  }
 }

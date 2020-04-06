@@ -21,14 +21,14 @@
   line-height: 1.5;
   font-size: 1.2rem;
   letter-spacing: -0.025em;
-}
-.item1__text h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  letter-spacing: 3px;
-}
-.item1__text span {
-  color: var(--dominant-light);
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+  }
+  span {
+    color: var(--dominant-light);
+  }
 }
 
 .item2__container {
@@ -84,18 +84,18 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-}
-.item3__text ul {
-  columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;
-  list-style-type: none;
-}
-.item3__text ul li {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-bottom: 14px;
+  ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    list-style-type: none;
+    li {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+  }
 }
 .item3__image-override {
   border-radius: 50%;
@@ -110,19 +110,11 @@
   font-weight: 700;
   letter-spacing: 3px;
 }
-
 .item3__wrapper-button {
   margin: 2rem 0;
   width: 100%;
 }
 
-.contact-form__container {
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
 .contact-form {
   width: 40rem;
   border-top: solid 1rem var(--dominant);
@@ -131,17 +123,34 @@
   box-shadow: 0 11px 25px -5px rgba(50, 50, 93, 0.25),
     0 6px 14px -8px rgba(0, 0, 0, 0.3), 0 -6px 14px -6px rgba(0, 0, 0, 0.025);
 }
+.contact-form__container {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  input,
+  textarea {
+    width: 100%;
+    background: var(--gray100);
+    color: var(--gray700);
+    border: none;
+    box-shadow: 0 2px 4px -2px rgba(50, 50, 93, 0.25),
+      0 4px 8px -4px rgba(0, 0, 0, 0.3), 0 -3px 5px -3px rgba(0, 0, 0, 0.025);
+    padding: 0.8rem 2rem 0.8rem 2rem;
+    margin: 0.5rem 0 1.8rem 0;
+  }
+}
 .contact-form__information {
   margin: 2rem 0 0 0;
 }
 .contact-form__information-inner {
   display: flex;
+  div {
+    flex: 1 1 0;
+    margin: 0 6px 0 0;
+  }
 }
-.contact-form__information-inner div {
-  flex: 1 1 0;
-  margin: 0 6px 0 0;
-}
-
 .contact-form__message {
   margin: 1rem 0;
 }
@@ -151,21 +160,11 @@
   height: 3px;
   justify-self: center;
 }
-
-.contact-form__container form input,
-.contact-form__container form textarea {
-  width: 100%;
-  background: var(--gray100);
-  color: var(--gray700);
-  border: none;
-  box-shadow: 0 2px 4px -2px rgba(50, 50, 93, 0.25),
-    0 4px 8px -4px rgba(0, 0, 0, 0.3), 0 -3px 5px -3px rgba(0, 0, 0, 0.025);
-  padding: 0.8rem 2rem 0.8rem 2rem;
-  margin: 0.5rem 0 1.8rem 0;
-}
-form span {
-  color: var(--red);
-  font-size: 1.3rem;
+form {
+  span {
+    color: var(--red);
+    font-size: 1.3rem;
+  }
 }
 
 .contact-banner-container {
@@ -183,40 +182,37 @@ form span {
   min-width: 25rem;
   box-shadow: 0 11px 25px -5px rgba(50, 50, 93, 0.25),
     0 6px 14px -8px rgba(0, 0, 0, 0.3), 0 -6px 14px -6px rgba(0, 0, 0, 0.025);
-}
-
-.contact-banner-container span {
-  text-align: center;
-  width: 100%;
-  font-size: 18px;
-  letter-spacing: 0.1em;
-  color: var(--gray200);
-  margin: 1rem;
-}
-.contact-banner-container form {
-  align-self: center;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.contact-banner-container input {
-  color: var(--gray700);
-  padding-left: 2rem;
-  background: #edf2f7;
-  border: none;
-  border-radius: 10px 0px 0px 10px;
-  height: 4rem;
-  width: 65%;
-}
-
-.contact-banner-container form button {
-  background: var(--gray800);
-  height: 4rem;
-  width: 35%;
-  border: none;
-  color: var(--gray200);
-  border-radius: 0px 10px 10px 0px;
-  outline: none;
-  cursor: pointer;
+  span {
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    color: var(--gray200);
+    margin: 1rem;
+  }
+  form {
+    align-self: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    button {
+      background: var(--gray800);
+      height: 4rem;
+      width: 35%;
+      border: none;
+      color: var(--gray200);
+      border-radius: 0px 10px 10px 0px;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+  input {
+    color: var(--gray700);
+    padding-left: 2rem;
+    background: #edf2f7;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    height: 4rem;
+    width: 65%;
+  }
 }
