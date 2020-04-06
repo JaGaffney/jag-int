@@ -4,7 +4,9 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const ContactPage = () => {
-  const urlParams = new URLSearchParams(window.location.search)
+  const urlParams = new URLSearchParams(
+    typeof window !== "undefined" && window.location.search
+  )
   const emailParamDefault = urlParams.get("email")
 
   let emailDefault = emailParamDefault
