@@ -41,7 +41,7 @@ main {
   align-items: center;
   background: var(--gray200);
   color: var(--gray800);
-  padding: 8rem 0 4rem 0;
+  padding: 4rem 0 4rem 0;
   flex-wrap: wrap;
 }
 
