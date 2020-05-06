@@ -7,7 +7,7 @@ const Item1 = () => {
   return (
     <div className="item1__container">
       <div className="item1__text">
-        <h1>Tag line of whats special</h1>
+        <h1>Facility service solutions</h1>
         <p>
           When you engage <span>JAG Integrated Services</span>, you benefit from
           our industry experience, operational efficiency and commitment to
