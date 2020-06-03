@@ -1,10 +1,7 @@
-import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
-
-// import { useStaticQuery, graphql } from "gatsby"
-// import Img from "gatsby-image"
-
+import React, { useEffect, useState } from "react"
 import Title from "../images/jag-int-logo.svg"
+import NavbarLanding from "./header/NavbarLanding"
 
 const Header = () => {
   const [activePage, setActivePage] = useState({
@@ -34,18 +31,6 @@ const Header = () => {
     }
   }, [])
 
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     placeholderImage: file(relativePath: { eq: "jag-int-logo.png" }) {
-  //       childImageSharp {
-  //         fluid(maxWidth: 300) {
-  //           ...GatsbyImageSharpFluid
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
-
   return (
     <header className="header-container">
       <div className="header-title">
@@ -55,34 +40,33 @@ const Header = () => {
             textDecoration: `none`,
           }}
         >
-          {/* <Img fluid={data.placeholderImage.childImageSharp.fluid} /> */}
           <img src={Title} alt="logo" />
         </Link>
       </div>
       <ul className="nav-links">
         <li>
-          <Link
-            to="/about"
+          <a
+            href="/#landing-about"
             className={activePage["about"] ? "active-header" : ""}
           >
             About
-          </Link>
+          </a>
         </li>
         <li>
-          <Link
-            to="/services"
+          <a
+            href="/#landing-services"
             className={activePage["services"] ? "active-header" : ""}
           >
             Services
-          </Link>
+          </a>
         </li>
         <li>
-          <Link
-            to="/contact"
+          <a
+            href="/#landing-contact"
             className={activePage["contact"] ? "active-header" : ""}
           >
             Contact
-          </Link>
+          </a>
         </li>
         <li>
           <a
@@ -93,6 +77,7 @@ const Header = () => {
           </a>
         </li>
       </ul>
+      <NavbarLanding />
     </header>
   )
 }

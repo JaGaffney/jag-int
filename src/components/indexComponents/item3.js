@@ -33,7 +33,7 @@ const Item3 = () => {
   }
 
   return (
-    <div className="item3__container">
+    <div className="item3__container" id="landing-services">
       <div className="item3__wrapper">
         <div className="item3__image">
           <Img
@@ -102,7 +102,7 @@ const Item3 = () => {
           </ul>
         </div>
       </div>
-      <div className="item3__wrapper-button">
+      {/* <div className="item3__wrapper-button">
         <Link className="item__button" to="/services">
           <div className="svg-wrapper">
             <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
@@ -111,7 +111,7 @@ const Item3 = () => {
             <div className="text">Explore</div>
           </div>
         </Link>
-      </div>
+      </div> */}
     </div>
   )
 }

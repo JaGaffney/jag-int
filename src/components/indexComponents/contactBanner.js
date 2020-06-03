@@ -1,10 +1,11 @@
 import React, { useState } from "react"
+import { Link } from "gatsby"
 
 const ContactBanner = () => {
   const [contactEmail, setContactEmail] = useState("")
 
   return (
-    <div className="contact-banner-container">
+    <div className="contact-banner-container" id="landing-contact">
       <span>If your in need of our services</span>
       <form action={`/contact?email=${contactEmail}`} method="POST">
         <input
@@ -12,7 +13,7 @@ const ContactBanner = () => {
           onChange={e => setContactEmail(e.target.value)}
           value={contactEmail}
         ></input>
-        <button>Get in touch</button>
+        <Link to={`/contact?email=${contactEmail}`}>Get in touch</Link>
       </form>
     </div>
   )
