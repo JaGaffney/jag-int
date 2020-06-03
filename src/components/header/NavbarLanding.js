@@ -42,7 +42,7 @@ function DropdownMenu() {
   function DropdownItem(props) {
     return props.type === "internal" ? (
       <a
-        href={`#landing-${props.link}`}
+        href={`/#landing-${props.link}`}
         className="menu-item"
         onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}
         aria-label={`Go to ${props.children} page`}
