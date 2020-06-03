@@ -6,7 +6,9 @@
   align-items: center;
   background: var(--gray800);
   color: var(--gray200);
-  padding: 10rem 0 8rem 0;
+  padding: 8rem 0;
+  position: relative;
+  top: -1px;
 }
 .item1__image {
   height: 100%;

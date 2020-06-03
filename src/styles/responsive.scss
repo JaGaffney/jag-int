@@ -20,7 +20,6 @@
   }
 
   .item1__container {
-    margin-top: 0.2rem;
     height: 100%;
     flex-direction: column;
     text-align: center;
@@ -36,8 +35,8 @@
   .item1__image {
     opacity: 0.05;
     position: absolute;
-    top: 90%;
-    left: 30%;
+    top: 50%;
+    left: 25%;
   }
 
   .item2__container {
@@ -137,6 +136,9 @@
 }
 
 @media only screen and (max-width: 500px) {
+  .dropdown {
+    width: 80%;
+  }
   .header-container {
     padding: 0;
   }
@@ -148,8 +150,12 @@
     padding: 3rem 0;
   }
   .item1__image {
-    top: 60%;
-    left: 20%;
+    top: 30%;
+    left: 5%;
+    width: 90%;
+  }
+  .svg-container svg {
+    width: 100%;
   }
   .item1__text {
     p {
