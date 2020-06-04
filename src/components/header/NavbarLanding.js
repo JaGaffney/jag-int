@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react"
 import { BsPersonLinesFill } from "react-icons/bs"
 import { FaMailBulk } from "react-icons/fa"
 import { MdBusiness } from "react-icons/md"
+import { FiLogIn } from "react-icons/fi"
 import { CSSTransition } from "react-transition-group"
 
 function NavItem(props) {
@@ -99,6 +100,13 @@ function DropdownMenu() {
             type="internal"
           >
             Contact
+          </DropdownItem>
+          <DropdownItem
+            leftIcon={<FiLogIn />}
+            link="https://jagintegrated.integralcs.com/login"
+            type="external"
+          >
+            Login
           </DropdownItem>
         </div>
       </CSSTransition>

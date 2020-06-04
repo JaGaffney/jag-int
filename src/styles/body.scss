@@ -50,13 +50,17 @@
   width: 30%;
 }
 .item2__text {
+  color: var(--gray800);
   height: 60%;
-  width: 40%;
+  width: 45%;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   flex-direction: column;
   padding: 4rem;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  letter-spacing: -0.025em;
 }
 
 .item3__container {
